@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    #map { height: 600px; }
+</style>
+<div class="text-center">
+    <h3>Welcome</h3>
+</div>
+<p style="font-size: 20px">
+    Hello, dear visitor! In this web page you can choose a country in the map and see a statistics about
+    COVID-19 prevalence in that country. All information is actual.
+</p><br />
+<p style="font-size: 20px">
+	Choose a date for which you need to get a COVID-19 statistics:
+</p>
+<form name="date_form">
+	<label for="date_show" style="font-size: 20px">Show info for </label>
+	<input name="date_show" type="date"/>
+</form><br />
+<p style="font-size: 20px">
+	Choose what type of statistics you need:
+</p>
+<form name="cases_options">
+	<input name="option" type="radio" id="opt1" value="confirmed" checked />
+	<label for="opt1" style="font-size: 20px">Confirmed</label>
+	<input name="option" type="radio" id="opt2" value="recovered" style="margin-left: 20px" />
+	<label for="opt2" style="font-size: 20px">Recovered</label>
+	<input name="option" type="radio" id="opt3" value="deaths" style="margin-left: 20px" />
+	<label for="opt3" style="font-size: 20px">Deaths</label>
+</form>
+<div id="map"></div>
+<script>
+	const map = L.map('map').setView([51.505, -0.09], 3);
+
+	const tiles = L.tileLayer('https://{s}.google.com/vt?lyrs=s,h&x={x}&y={y}&z={z}', {
+		maxZoom: 20,
+		subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+	}).addTo(map);
+
+	const popup = L.popup()
+
+	async function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent(`Please, wait, your request is in progress...`)
+			.openOn(map);
+
+		const latlng = e.latlng.toString()
+			.replace("LatLng", "").replace("(", "").replace(")", "").replace(" ", "");
+		const lat_lng = latlng.split(",");
+		const response = await fetch("/Home/GetCountry?lat=" + lat_lng[0] + "&lng=" + lat_lng[1], {
+             method: "GET"
+        });
+		if (response.ok === true) {
+			const country = await response.text();
+			const showDate = document.forms["date_form"].elements["date_show"].value;
+			if (!showDate) {
+				popup
+					.setLatLng(e.latlng)
+					.setContent(`You need to choose a date.`)
+					.openOn(map);
+				return;
+			}
+			const option = document.forms["cases_options"].elements["option"].value;
+			const covidInfo = await fetch("/Home/GetCovid19Info?country=" + country + "&date=" + showDate + "&mode=" + option, {
+				 method: "GET"
+			});
+			if (covidInfo.ok === true) {
+				popup
+					.setLatLng(e.latlng)
+					.setContent(await covidInfo.text())
+					.openOn(map);
+			}
+			else {
+				popup
+					.setLatLng(e.latlng)
+					.setContent(`Unfortunately, a error is happened... You can try to choose other date or country.`)
+					.openOn(map);
+			}
+		}
+		else {
+			popup
+				.setLatLng(e.latlng)
+				.setContent(`This is not a country!`)
+				.openOn(map);
+		}
+	}
+
+	map.on('click', onMapClick);
+</script>

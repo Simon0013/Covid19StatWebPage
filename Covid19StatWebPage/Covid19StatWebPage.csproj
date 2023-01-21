@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GeoDataSource" Version="1.0.0.33" />
+    <PackageReference Include="NGeo" Version="1.9.0" />
+    <PackageReference Include="Wibci.CountryReverseGeocode" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>

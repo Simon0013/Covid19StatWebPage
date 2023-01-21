@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "dgSpecHash": "G/meK1AKn7h9SCncE2Pp0Yhl8AwV6QZPMrCRivDxmU2T3+FqwpCVcBoguXFu9PTN7nkldQSmGg8MClaK0SfCeQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\VitSpecN\\source\\repos\\Covid19StatWebPage\\Covid19StatWebPage\\Covid19StatWebPage.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\VitSpecN\\.nuget\\packages\\geodatasource\\1.0.0.33\\geodatasource.1.0.0.33.nupkg.sha512",
+    "C:\\Users\\VitSpecN\\.nuget\\packages\\newtonsoft.json\\4.5.11\\newtonsoft.json.4.5.11.nupkg.sha512",
+    "C:\\Users\\VitSpecN\\.nuget\\packages\\ngeo\\1.9.0\\ngeo.1.9.0.nupkg.sha512",
+    "C:\\Users\\VitSpecN\\.nuget\\packages\\sharpziplib\\0.86.0\\sharpziplib.0.86.0.nupkg.sha512",
+    "C:\\Users\\VitSpecN\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\VitSpecN\\.nuget\\packages\\wibci.countryreversegeocode\\2.1.0\\wibci.countryreversegeocode.2.1.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"GeoDataSource 1.0.0.33\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "GeoDataSource",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Newtonsoft.Json 4.5.11\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"NGeo 1.9.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "NGeo",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"SharpZipLib 0.86.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "SharpZipLib",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Covid19StatWebPage/1.0.0": {
+        "dependencies": {
+          "GeoDataSource": "1.0.0.33",
+          "NGeo": "1.9.0",
+          "Wibci.CountryReverseGeocode": "2.1.0"
+        },
+        "runtime": {
+          "Covid19StatWebPage.dll": {}
+        }
+      },
+      "GeoDataSource/1.0.0.33": {
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "runtime": {
+          "lib/net45/GeoDataSource.dll": {
+            "assemblyVersion": "1.0.0.33",
+            "fileVersion": "1.0.0.33"
+          }
+        }
+      },
+      "Newtonsoft.Json/4.5.11": {
+        "runtime": {
+          "lib/net40/Newtonsoft.Json.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.11.15520"
+          }
+        }
+      },
+      "NGeo/1.9.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "4.5.11"
+        },
+        "runtime": {
+          "lib/net40/NGeo.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {
+            "assemblyVersion": "0.86.0.518",
+            "fileVersion": "0.86.0.518"
+          }
+        }
+      },
+      "System.Text.Json/4.7.2": {},
+      "Wibci.CountryReverseGeocode/2.1.0": {
+        "dependencies": {
+          "System.Text.Json": "4.7.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Wibci.CountryReverseGeocode.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Covid19StatWebPage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GeoDataSource/1.0.0.33": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5QAH+U6d9tSJ9oAedZ16FjPzttIBJtsgTN0i8AoRmJmCsgvxXnXNk5foo8+/LA3ili7nGIIRqqGL3XlBdufBcA==",
+      "path": "geodatasource/1.0.0.33",
+      "hashPath": "geodatasource.1.0.0.33.nupkg.sha512"
+    },
+    "Newtonsoft.Json/4.5.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IZ0vmfvcJrUONMIG3St+1EzSlnHc9qFY6/FU2YMHNXaGtdm6sSwIUAdXPAw1k3IwpxjVmZ0w9Pzszd8GkyrpFA==",
+      "path": "newtonsoft.json/4.5.11",
+      "hashPath": "newtonsoft.json.4.5.11.nupkg.sha512"
+    },
+    "NGeo/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/LDfWWCsWqK9TG0bsMtbr2lrH+EZo2R4toQzMtvpkbOZmFXMOw+9ARU1LDPUay4Xq3ZTpb1k3+JaKS3ZBGA1+g==",
+      "path": "ngeo/1.9.0",
+      "hashPath": "ngeo.1.9.0.nupkg.sha512"
+    },
+    "SharpZipLib/0.86.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5DbS1SlKLMi+WG00Cm0ueYf2oyXJrowETQk8nx96rmdjTuHsA3laPykGV7Sxi0R5Xxfx0Kh/EfacAZ1f6M7y/g==",
+      "path": "sharpziplib/0.86.0",
+      "hashPath": "sharpziplib.0.86.0.nupkg.sha512"
+    },
+    "System.Text.Json/4.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
+      "path": "system.text.json/4.7.2",
+      "hashPath": "system.text.json.4.7.2.nupkg.sha512"
+    },
+    "Wibci.CountryReverseGeocode/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EUDch7vAjw/O+SYBne58p9Mr2KZI9DRcE8MmN7NgwBK5TMFKL34SIlnvNHfMOgyjM3fsQG+JTVxbz+POln9nFQ==",
+      "path": "wibci.countryreversegeocode/2.1.0",
+      "hashPath": "wibci.countryreversegeocode.2.1.0.nupkg.sha512"
+    }
+  }
+}
